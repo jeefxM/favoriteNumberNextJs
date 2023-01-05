@@ -139,11 +139,11 @@ export default function Home() {
           formData.number,
           formData.name
         );
-        setStatus(`Mining...`);
+        setStatus("Mining...");
         await storePerson.wait();
 
         console.log("Mined -- ", storePerson.hash);
-        setStatus(`Mined -- `);
+        setStatus("Mined -- ");
       } else {
         console.log("Ethereum object doesn't exist!");
       }
@@ -195,7 +195,7 @@ export default function Home() {
       <br></br>
       <div className="mainContent">
         <p style={{ marginRight: "auto" }}>
-          Hey my name is David and i've built this Dapp.
+          Hey my name is David and I have built this Dapp.
           <br></br>
           You can store your name and favorite number on the blockchain which is
           currently hosted on Polygon mainnet.
@@ -280,7 +280,7 @@ export default function Home() {
           <p>
             {userFavoriteNumber && (
               <span>
-                As it seems {formData.nameToNumber}'s favorite number is :{" "}
+                As it seems for {formData.nameToNumber} favorite number is :{" "}
                 {userFavoriteNumber}
               </span>
             )}
