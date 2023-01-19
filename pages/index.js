@@ -176,6 +176,7 @@ export default function Home() {
     const account = await findMetaMaskAccount();
     if (account !== null) {
       setCurrentAccount(account);
+      getAllNumbers();
     }
   };
 
